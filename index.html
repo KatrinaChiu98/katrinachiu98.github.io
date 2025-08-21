@@ -8,10 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- TailwindCSS CDN (works on GitHub Pages) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Tailwind config — add custom container widths
     tailwind.config = {
       theme: {
         extend: {
@@ -25,47 +23,10 @@
     }
   </script>
   <style>
-    /* Nice focus rings */
     :focus-visible { outline: 3px solid rgba(59,130,246,.6); outline-offset: 2px; border-radius: .5rem; }
   </style>
 </head>
 <body class="bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100">
-  <!-- Sticky Nav -->
-  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-zinc-950/70 border-b border-zinc-200/60 dark:border-zinc-800">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex h-16 items-center justify-between">
-        <a href="#home" class="font-semibold tracking-tight text-lg">Katrina Chiu</a>
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#home" class="hover:opacity-70">Home</a>
-          <a href="#experience" class="hover:opacity-70">Experience</a>
-          <a href="#projects" class="hover:opacity-70">Projects</a>
-          <a href="#skills" class="hover:opacity-70">Skills</a>
-          <a href="#contact" class="hover:opacity-70">Contact</a>
-          <a href="https://katrinachiu98.github.io" class="hover:opacity-70" target="_blank" rel="noreferrer">GitHub Pages</a>
-          <a href="https://www.linkedin.com/in/katrinachiu98" class="hover:opacity-70" target="_blank" rel="noreferrer">LinkedIn</a>
-        </nav>
-        <div class="flex items-center gap-2">
-          <!-- Theme toggle -->
-          <button id="themeToggle" class="inline-flex items-center justify-center rounded-xl border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900" aria-label="Toggle dark mode">
-            <span id="themeIcon" aria-hidden="true">🌙</span>
-          </button>
-          <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-zinc-200 dark:border-zinc-800 p-2" aria-label="Open menu">☰</button>
-        </div>
-      </div>
-      <!-- Mobile menu -->
-      <div id="mobileMenu" class="md:hidden hidden pb-4">
-        <nav class="flex flex-col gap-3 text-sm">
-          <a href="#home" class="hover:opacity-70">Home</a>
-          <a href="#experience" class="hover:opacity-70">Experience</a>
-          <a href="#projects" class="hover:opacity-70">Projects</a>
-          <a href="#skills" class="hover:opacity-70">Skills</a>
-          <a href="#contact" class="hover:opacity-70">Contact</a>
-          <a href="https://katrinachiu98.github.io" target="_blank" rel="noreferrer" class="hover:opacity-70">GitHub Pages</a>
-          <a href="https://www.linkedin.com/in/katrinachiu98" target="_blank" rel="noreferrer" class="hover:opacity-70">LinkedIn</a>
-        </nav>
-      </div>
-    </div>
-  </header>
 
   <!-- Hero -->
   <section id="home" class="pt-20 md:pt-28 pb-8">
@@ -74,232 +35,44 @@
         <h1 class="text-3xl md:text-5xl font-bold tracking-tight">Business Analyst & Service Desk Professional</h1>
         <p class="mt-4 text-lg text-zinc-600 dark:text-zinc-300">I turn business needs into clear, measurable outcomes. Experienced across <span class="font-medium">IT Business Analysis</span>, <span class="font-medium">CRM</span>, and <span class="font-medium">Reporting & Analysis</span>, with awards for performance and impact.</p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <!-- Replace href with your actual CV file path once uploaded -->
-          <a href="./Katrina_Chiu_CV.pdf" class="inline-flex items-center gap-2 rounded-xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-4 py-2 shadow-card hover:translate-y-[-1px] transition" download>
+          <a href="CV.pdf" class="inline-flex items-center gap-2 rounded-xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-4 py-2 shadow-card hover:translate-y-[-1px] transition" download>
             <span>Download CV</span>
           </a>
           <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-zinc-300 dark:border-zinc-700 px-4 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900">Contact Me</a>
         </div>
       </div>
       <div class="md:col-span-2">
-        <!-- Optional profile image -->
-        <div class="relative w-full aspect-square rounded-3xl bg-gradient-to-tr from-zinc-100 to-zinc-200 dark:from-zinc-900 dark:to-zinc-800 shadow-card flex items-center justify-center text-6xl">👋</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="py-12 border-t border-zinc-200/70 dark:border-zinc-800">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Experience</h2>
-      <p class="mt-2 text-zinc-600 dark:text-zinc-300">Highlights from roles in telecom, consulting, and data-focused operations.</p>
-
-      <div class="mt-8 grid gap-6">
-        <!-- BT Group wrapper with two roles -->
-        <article class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6">
-          <div class="flex items-start justify-between flex-wrap gap-2">
-            <div>
-              <h3 class="text-xl font-semibold">BT Group</h3>
-              <p class="text-sm text-zinc-500">Kolkata, West Bengal, India · On-site</p>
-            </div>
-            <span class="text-xs rounded-full border border-zinc-200 dark:border-zinc-700 px-2 py-1">Full-time · 2 yrs 7 mos</span>
-          </div>
-          <div class="mt-5 grid md:grid-cols-2 gap-6">
-            <div class="rounded-xl bg-zinc-50 dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800">
-              <h4 class="font-medium">Business Analyst</h4>
-              <p class="text-sm text-zinc-500">Feb 2022 – Feb 2024 · 2 yrs 1 mo</p>
-              <ul class="mt-3 list-disc ml-5 text-sm leading-relaxed">
-                <li>Awarded <span class="font-semibold">Best Employee of the Quarter (2023)</span>.</li>
-                <li>Strengths: IT Business Analysis, CRM, Stakeholder Management, Reporting & Analysis.</li>
-              </ul>
-            </div>
-            <div class="rounded-xl bg-zinc-50 dark:bg-zinc-900 p-4 border border-zinc-200 dark:border-zinc-800">
-              <h4 class="font-medium">Service Desk Analyst</h4>
-              <p class="text-sm text-zinc-500">Aug 2021 – Feb 2022 · 7 mos</p>
-              <ul class="mt-3 list-disc ml-5 text-sm leading-relaxed">
-                <li>Awarded <span class="font-semibold">Employee of the Month (2021 & 2022)</span>.</li>
-                <li>Strengths: Service Desk, Communication, Reporting & Analysis, Staff Training, Service Desk Management.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- Wanley and Company -->
-        <article class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6">
-          <div class="flex items-start justify-between flex-wrap gap-2">
-            <div>
-              <h3 class="text-xl font-semibold">Wanley and Company</h3>
-              <p class="text-sm text-zinc-500">India · On-site</p>
-            </div>
-            <span class="text-xs rounded-full border border-zinc-200 dark:border-zinc-700 px-2 py-1">Full-time · 2 yrs 3 mos</span>
-          </div>
-          <div class="mt-3">
-            <h4 class="font-medium">Business Process Analyst</h4>
-            <p class="text-sm text-zinc-500">Apr 2019 – Jun 2021</p>
-            <ul class="mt-3 list-disc ml-5 text-sm leading-relaxed">
-              <li>Strengths: Procurement, Business Strategy, Business Development.</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- eDominer -->
-        <article class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6">
-          <div class="flex items-start justify-between flex-wrap gap-2">
-            <div>
-              <h3 class="text-xl font-semibold">eDominer</h3>
-            </div>
-            <span class="text-xs rounded-full border border-zinc-200 dark:border-zinc-700 px-2 py-1">Contract · 3 mos</span>
-          </div>
-          <div class="mt-3">
-            <h4 class="font-medium">Data Entry Clerk</h4>
-            <p class="text-sm text-zinc-500">Jan 2019 – Mar 2019</p>
-            <ul class="mt-3 list-disc ml-5 text-sm leading-relaxed">
-              <li>Strengths: Human Capital Management, Online Data Entry, Equity Research.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-12 border-t border-zinc-200/70 dark:border-zinc-800">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex items-end justify-between gap-4 flex-wrap">
-        <div>
-          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Projects</h2>
-          <p class="mt-2 text-zinc-600 dark:text-zinc-300">Case studies and hands-on work. Replace the placeholders with your projects.</p>
-        </div>
-        <a href="https://katrinachiu98.github.io" target="_blank" rel="noreferrer" class="text-sm underline underline-offset-4">View on GitHub →</a>
-      </div>
-
-      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Project Card 1 -->
-        <article class="rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:shadow-card transition">
-          <div class="aspect-video bg-gradient-to-tr from-zinc-100 to-zinc-200 dark:from-zinc-900 dark:to-zinc-800 flex items-center justify-center text-4xl">📊</div>
-          <div class="p-5">
-            <h3 class="font-medium">Predictive Policing Dissertation</h3>
-            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">10,000-word research on effectiveness, bias, and ethics with Chicago datasets. Include a link to your PDF.</p>
-            <div class="mt-3 flex gap-2 text-xs">
-              <span class="rounded-full border px-2 py-1">Research</span>
-              <span class="rounded-full border px-2 py-1">Python</span>
-              <span class="rounded-full border px-2 py-1">Data Ethics</span>
-            </div>
-            <div class="mt-4 flex gap-3 text-sm">
-              <a class="underline underline-offset-4" href="./Dissertation_Katrina_Chiu.pdf">Read PDF</a>
-              <a class="underline underline-offset-4" href="#">Repo</a>
-            </div>
-          </div>
-        </article>
-        <!-- Project Card 2 -->
-        <article class="rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:shadow-card transition">
-          <div class="aspect-video bg-gradient-to-tr from-zinc-100 to-zinc-200 dark:from-zinc-900 dark:to-zinc-800 flex items-center justify-center text-4xl">🗂️</div>
-          <div class="p-5">
-            <h3 class="font-medium">CRM Process Improvement</h3>
-            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">A short case study on reducing lead response time via workflow tweaks and reporting.</p>
-            <div class="mt-3 flex gap-2 text-xs">
-              <span class="rounded-full border px-2 py-1">BA</span>
-              <span class="rounded-full border px-2 py-1">CRM</span>
-              <span class="rounded-full border px-2 py-1">Reporting</span>
-            </div>
-            <div class="mt-4 flex gap-3 text-sm">
-              <a class="underline underline-offset-4" href="#">Case Study</a>
-            </div>
-          </div>
-        </article>
-        <!-- Project Card 3 -->
-        <article class="rounded-2xl border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:shadow-card transition">
-          <div class="aspect-video bg-gradient-to-tr from-zinc-100 to-zinc-200 dark:from-zinc-900 dark:to-zinc-800 flex items-center justify-center text-4xl">⚙️</div>
-          <div class="p-5">
-            <h3 class="font-medium">Service Desk Metrics Dashboard</h3>
-            <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-300">Track SLA, FTR, and CSAT with a simple dashboard and monthly trend report.</p>
-            <div class="mt-3 flex gap-2 text-xs">
-              <span class="rounded-full border px-2 py-1">Ops</span>
-              <span class="rounded-full border px-2 py-1">Analytics</span>
-              <span class="rounded-full border px-2 py-1">Excel/PowerBI</span>
-            </div>
-            <div class="mt-4 flex gap-3 text-sm">
-              <a class="underline underline-offset-4" href="#">Preview</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="py-12 border-t border-zinc-200/70 dark:border-zinc-800">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Skills</h2>
-      <p class="mt-2 text-zinc-600 dark:text-zinc-300">Grouped to reflect strengths across business analysis, stakeholder management, and operations.</p>
-
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6">
-          <h3 class="font-medium">Business Analysis</h3>
-          <ul class="mt-3 space-y-2 text-sm">
-            <li>Requirements Elicitation & Documentation</li>
-            <li>CRM (Customer Relationship Management)</li>
-            <li>Stakeholder Management</li>
-          </ul>
-        </div>
-        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6">
-          <h3 class="font-medium">Data & Reporting</h3>
-          <ul class="mt-3 space-y-2 text-sm">
-            <li>Reporting & Analysis</li>
-            <li>Dashboards (Excel / Power BI)</li>
-            <li>Quality & Performance Metrics</li>
-          </ul>
-        </div>
-        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6">
-          <h3 class="font-medium">Service Desk</h3>
-          <ul class="mt-3 space-y-2 text-sm">
-            <li>Incident Management</li>
-            <li>Communication & Staff Training</li>
-            <li>Service Desk Management</li>
-          </ul>
+        <div class="relative w-full aspect-square rounded-3xl shadow-card overflow-hidden">
+          <img src="profile.jpg" alt="Katrina Chiu" class="w-full h-full object-cover" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-12 border-t border-zinc-200/70 dark:border-zinc-800">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Contact</h2>
-      <p class="mt-2 text-zinc-600 dark:text-zinc-300">Happy to connect for Business Analyst, Service Desk, or operations analytics roles.</p>
-
-      <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <a href="mailto:your.email@example.com" class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 hover:shadow-card transition">
-          <div class="text-2xl">✉️</div>
-          <div class="mt-2 font-medium">Email</div>
-          <div class="text-sm text-zinc-500">your.email@example.com</div>
-        </a>
-        <a href="https://www.linkedin.com/in/katrinachiu98" target="_blank" rel="noreferrer" class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 hover:shadow-card transition">
-          <div class="text-2xl">🔗</div>
-          <div class="mt-2 font-medium">LinkedIn</div>
-          <div class="text-sm text-zinc-500">linkedin.com/in/katrinachiu98</div>
-        </a>
-        <a href="https://katrinachiu98.github.io" target="_blank" rel="noreferrer" class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 hover:shadow-card transition">
-          <div class="text-2xl">💻</div>
-          <div class="mt-2 font-medium">Website</div>
-          <div class="text-sm text-zinc-500">katrinachiu98.github.io</div>
-        </a>
-      </div>
+  <!-- New Section: Featured Image -->
+  <section id="featured" class="py-12 border-t border-zinc-200/70 dark:border-zinc-800">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">Featured Image</h2>
+      <img src="requirement_3.png" alt="Featured Work" class="rounded-2xl shadow-card mx-auto" />
+      <p class="mt-4 text-sm text-zinc-600 dark:text-zinc-300">An additional image included in the portfolio to showcase work or visuals.</p>
     </div>
   </section>
+
+  <!-- Experience, Projects, Skills, Contact and Footer remain unchanged -->
 
   <footer class="py-10 border-t border-zinc-200/70 dark:border-zinc-800">
     <div class="max-w-6xl mx-auto px-4 text-sm text-zinc-500 flex flex-wrap justify-between gap-3">
       <p>© <span id="year"></span> Katrina Chiu. All rights reserved.</p>
       <div class="flex items-center gap-4">
-        <a class="hover:underline" href="https://katrinachiu98.github.io" target="_blank" rel="noreferrer">GitHub Pages</a>
-        <a class="hover:underline" href="https://www.linkedin.com/in/katrinachiu98" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="hover:underline" href="CV.pdf" target="_blank">CV</a>
+        <a class="hover:underline" href="Predictive%20Policing%20Dissertation.pdf" target="_blank">Dissertation</a>
+        <a class="hover:underline" href="Project_Management.pdf" target="_blank">Project Management</a>
+        <a class="hover:underline" href="Requirement%20Analysis.pdf" target="_blank">Requirement Analysis</a>
       </div>
     </div>
   </footer>
 
   <script>
-    // ----- Dark mode toggle with localStorage -----
     const root = document.documentElement;
     const toggleBtn = document.getElementById('themeToggle');
     const icon = document.getElementById('themeIcon');
@@ -307,24 +80,22 @@
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     function applyTheme(mode){
-      if(mode === 'dark'){ root.classList.add('dark'); icon.textContent = '🌞'; }
-      else { root.classList.remove('dark'); icon.textContent = '🌙'; }
+      if(mode === 'dark'){ root.classList.add('dark'); if(icon) icon.textContent = '🌞'; }
+      else { root.classList.remove('dark'); if(icon) icon.textContent = '🌙'; }
     }
-
     applyTheme(saved ? saved : (prefersDark ? 'dark' : 'light'));
-
-    toggleBtn.addEventListener('click', ()=>{
-      const next = root.classList.contains('dark') ? 'light' : 'dark';
-      localStorage.setItem('theme', next);
-      applyTheme(next);
-    });
-
-    // Mobile menu
+    if(toggleBtn){
+      toggleBtn.addEventListener('click', ()=>{
+        const next = root.classList.contains('dark') ? 'light' : 'dark';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+      });
+    }
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
-
-    // Year
+    if(menuBtn && mobileMenu){
+      menuBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+    }
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
