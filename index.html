@@ -35,7 +35,6 @@
         <nav class="hidden md:flex items-center gap-6 text-sm">
           <a href="#home" class="hover:opacity-70">Home</a>
           <a href="#experience" class="hover:opacity-70">Experience</a>
-          <a href="#skills" class="hover:opacity-70">Skills</a>
           <a href="#projects" class="hover:opacity-70">Projects</a>
           <a href="https://www.linkedin.com/in/katrinachiu98" class="hover:opacity-70" target="_blank" rel="noreferrer">LinkedIn</a>
         </nav>
@@ -60,30 +59,26 @@
     </div>
   </header>
 
- <!-- Hero -->
-<section id="home" class="pt-20 md:pt-28 pb-8">
-  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-5 items-center gap-10">
-    <div class="md:col-span-3">
-      <h1 class="text-3xl md:text-5xl font-bold tracking-tight">Business Analyst</h1>
-      <p class="mt-4 text-lg text-zinc-600 dark:text-zinc-300">
-        I turn business needs into clear, measurable outcomes. Experienced across 
-        <span class="font-medium"> Business Analysis</span>,
-        <span class="font-medium">Reporting & Analysis</span>, 
-        with awards for performance and impact.
-      </p>
-
-      <!-- Buttons -->
-      <div class="mt-6 flex flex-wrap gap-3">
-        <a href="Katrina Chiu CV.pdf" 
-           class="inline-flex items-center gap-2 rounded-xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-4 py-2 shadow-card hover:translate-y-[-1px] transition" 
-           download>
-          <span>Download CV</span>
-        </a>
-     <a href="mailto:katrinachiu98@gmail.com" 
-   class="inline-flex items-center gap-2 rounded-xl border border-zinc-300 dark:border-zinc-700 px-4 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900">
-  Contact Me
-</a>
-
+  <!-- Hero -->
+  <section id="home" class="pt-20 md:pt-28 pb-8">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-5 items-center gap-10">
+      <div class="md:col-span-3">
+        <h1 class="text-3xl md:text-5xl font-bold tracking-tight">Business Analyst</h1>
+        <p class="mt-4 text-lg text-zinc-600 dark:text-zinc-300">I turn business needs into clear, measurable outcomes. Experienced across <span class="font-medium">IT Business Analysis</span>, <span class="font-medium">CRM</span>, and <span class="font-medium">Reporting & Analysis</span>, with awards for performance and impact.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="CV.pdf" class="inline-flex items-center gap-2 rounded-xl bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 px-4 py-2 shadow-card hover:translate-y-[-1px] transition" download>
+            <span>Download CV</span>
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-zinc-300 dark:border-zinc-700 px-4 py-2 hover:bg-zinc-50 dark:hover:bg-zinc-900">Contact Me</a>
+        </div>
+      </div>
+      <div class="md:col-span-2">
+        <div class="relative w-full aspect-square rounded-3xl shadow-card overflow-hidden">
+          <img src="Katrina.png" alt="Katrina Chiu" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Experience (same as before, omitted for brevity) -->
 <!-- Experience -->
@@ -163,52 +158,7 @@
     </div>
   </div>
 </section>
-<!-- Skills -->
-<section id="skills" class="py-12 border-t border-zinc-200/70 dark:border-zinc-800">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Skills</h2>
-    <p class="mt-2 text-zinc-600 dark:text-zinc-300">A mix of analytical, technical, and business competencies.</p>
 
-    <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-
-      <!-- Analytical Skills -->
-      <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-zinc-50 dark:bg-zinc-900">
-        <h3 class="font-medium text-lg mb-2">Analytical</h3>
-        <ul class="list-disc ml-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-          <li>Data Analysis & Visualization</li>
-          <li>Requirements Gathering</li>
-          <li>Process Mapping & Optimization</li>
-          <li>Stakeholder Management</li>
-        </ul>
-      </div>
-
-      <!-- Technical Skills -->
-      <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-zinc-50 dark:bg-zinc-900">
-        <h3 class="font-medium text-lg mb-2">Technical</h3>
-        <ul class="list-disc ml-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-          <li>SQL, Excel (Advanced), Power BI</li>
-          <li>CRM Tools (Salesforce, Dynamics 365)</li>
-          <li>JIRA, Confluence, Agile Methodologies</li>
-          <li>ServiceNow, ITIL Foundation</li>
-        </ul>
-      </div>
-       <!-- Business & Communication -->
-      <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-zinc-50 dark:bg-zinc-900">
-        <h3 class="font-medium text-lg mb-2">Business & Communication</h3>
-        <ul class="list-disc ml-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-          <li>Business Process Analysis</li>
-          <li>Project Coordination & Reporting</li>
-          <li>Stakeholder Presentation</li>
-          <li>Cross-functional Collaboration</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-        
   <!-- Projects -->
   <section id="projects" class="py-12 border-t border-zinc-200/70 dark:border-zinc-800">
     <div class="max-w-6xl mx-auto px-4">
@@ -257,8 +207,54 @@
     </div>
   </section>
 
-  
-        <!-- LinkedIn card -->
+  <!-- Skills & Contact sections unchanged -->
+<section id="skills" class="py-12 border-t border-zinc-200/70 dark:border-zinc-800">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Skills</h2>
+    <p class="mt-2 text-zinc-600 dark:text-zinc-300">A mix of analytical, technical, and business competencies.</p>
+    <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Analytical Skills -->
+      <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-zinc-50 dark:bg-zinc-900">
+        <h3 class="font-medium text-lg mb-2">Analytical</h3>
+        <ul class="list-disc ml-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+          <li>Data Analysis & Visualization</li>
+          <li>Requirements Gathering</li>
+          <li>Process Mapping & Optimization</li>
+          <li>Stakeholder Management</li>
+        </ul>
+      </div>
+      <!-- Technical Skills -->
+      <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-zinc-50 dark:bg-zinc-900">
+        <h3 class="font-medium text-lg mb-2">Technical</h3>
+        <ul class="list-disc ml-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+          <li>SQL, Excel (Advanced), Power BI</li>
+          <li>CRM Tools (Salesforce, Dynamics 365)</li>
+          <li>JIRA, Confluence, Agile Methodologies</li>
+          <li>ServiceNow, ITIL Foundation</li>
+        </ul>
+      </div>
+       <!-- Business & Communication -->
+      <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-zinc-50 dark:bg-zinc-900">
+        <h3 class="font-medium text-lg mb-2">Business & Communication</h3>
+        <ul class="list-disc ml-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+          <li>Business Process Analysis</li>
+          <li>Project Coordination & Reporting</li>
+          <li>Stakeholder Presentation</li>
+          <li>Cross-functional Collaboration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- Email card -->
+      <a href="mailto:katrinachiu98@gmail.com" 
+         class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 hover:shadow-card transition">
+        <div class="text-2xl">✉️</div>
+        <div class="mt-2 font-medium">Email</div>
+        <div class="text-sm text-zinc-500">your.email@example.com</div>
+      </a>
+
+      <!-- LinkedIn card -->
       <a href="https://www.linkedin.com/in/katrinachiu98" ...> ... </a>
 
 
@@ -301,4 +297,4 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
-</html>
+</html>- i need to add the skills section
