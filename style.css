@@ -23,3 +23,37 @@ footer {
 a {
     color: #ffd700;
 }
+.section {
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: left; /* or center if you prefer */
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #111;          /* match your experience card background */
+  border-radius: 18px;
+  padding: 20px 24px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: underline;
+}
