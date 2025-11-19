@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Predictive Policing Case Study — Katrina Chiu</title>
-  <meta name="description" content="Case study: Analysis of Predictive Policing Systems Using Chicago Data by Katrina Chiu." />
-  
-  <!-- Same fonts + Tailwind as your main page -->
+  <title>Requirements Analysis Case Study — Katrina Chiu</title>
+  <meta name="description" content="Case study: Integration Requirements Report by Katrina Chiu." />
+
+  <!-- Same fonts + Tailwind as main page -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
 
 <body class="bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100">
 
-  <!-- Same style nav, but links go back to main page -->
+  <!-- Nav -->
   <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-zinc-950/70 border-b border-zinc-200/60 dark:border-zinc-800">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex h-16 items-center justify-between">
@@ -70,136 +70,7 @@
         ← Back to main portfolio
       </a>
 
-      <!-- Project header card -->
+      <!-- Header card -->
       <section class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-zinc-50 dark:bg-zinc-900 shadow-card space-y-3">
         <p class="text-xs uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">Project case study</p>
         <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">
-          Analysis of Predictive Policing Systems Using Chicago Data
-        </h1>
-        <p class="text-sm text-zinc-600 dark:text-zinc-300">
-          <span class="font-semibold">Role:</span> Researcher ·
-          <span class="font-semibold">Tools:</span> Python, Pandas, scikit-learn, Jupyter, GitHub
-        </p>
-        <p class="text-sm text-zinc-600 dark:text-zinc-300">
-          <span class="font-semibold">Summary:</span> 10,000-word dissertation evaluating the effectiveness, bias, and ethical implications
-          of predictive policing models using Chicago crime data.
-        </p>
-      </section>
-
-      <!-- Overview cards -->
-      <section class="grid gap-4 md:grid-cols-3">
-        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 bg-zinc-50 dark:bg-zinc-900">
-          <h2 class="text-sm font-semibold mb-1">Problem</h2>
-          <p class="text-sm text-zinc-600 dark:text-zinc-300">
-            Understand whether predictive policing tools genuinely improve crime prediction and how they might
-            replicate historical bias.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 bg-zinc-50 dark:bg-zinc-900">
-          <h2 class="text-sm font-semibold mb-1">Approach</h2>
-          <p class="text-sm text-zinc-600 dark:text-zinc-300">
-            Cleaned and modelled Chicago open crime data, compared baseline models with resource-allocation style
-            models, and evaluated fairness across areas.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 bg-zinc-50 dark:bg-zinc-900">
-          <h2 class="text-sm font-semibold mb-1">Outcome</h2>
-          <p class="text-sm text-zinc-600 dark:text-zinc-300">
-            Found that performance gains were tightly coupled to biased historical data, highlighting governance
-            and deployment risks.
-          </p>
-        </div>
-      </section>
-
-      <!-- Detailed sections -->
-      <section class="space-y-6">
-        <div>
-          <h2 class="text-xl font-semibold tracking-tight mb-2">1. Problem &amp; context</h2>
-          <p class="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            Explain why predictive policing is used, what questions you wanted to answer (effectiveness, bias, ethics),
-            and why you chose Chicago datasets.
-          </p>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold tracking-tight mb-2">2. Data &amp; preprocessing</h2>
-          <ul class="list-disc ml-6 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed space-y-1">
-            <li>Source of the data (Chicago open data portal, time period, filters).</li>
-            <li>Cleaning steps: missing values, outliers, encoding.</li>
-            <li>Feature engineering: time of day, seasonality, neighbourhood indicators, etc.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold tracking-tight mb-2">3. Modelling approach</h2>
-          <ul class="list-disc ml-6 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed space-y-1">
-            <li>Models used (e.g. logistic regression, random forest, gradient boosting).</li>
-            <li>Train/test split and validation strategy.</li>
-            <li>Metrics: accuracy, AUC, precision/recall, fairness metrics.</li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold tracking-tight mb-2">4. Key findings</h2>
-          <p class="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            Summarise the main results and what they mean in terms of policing, bias, and policy decisions.
-          </p>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold tracking-tight mb-2">5. Challenges &amp; future work</h2>
-          <p class="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
-            Highlight data limitations, modelling trade-offs, and what you would explore next (e.g. causal methods,
-            alternative fairness metrics, or policy simulations).
-          </p>
-        </div>
-      </section>
-
-      <!-- Links -->
-      <section class="pt-4 border-t border-zinc-200 dark:border-zinc-800 flex flex-wrap gap-3">
-        <a href="../Requirement Analysis.pdf"
-           class="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
-           target="_blank">
-          📄 Download full dissertation (PDF)
-        </a>
-      </section>
-    </div>
-  </main>
-
-  <footer class="py-10 border-t border-zinc-200/70 dark:border-zinc-800">
-    <div class="max-w-6xl mx-auto px-4 text-sm text-zinc-500 flex flex-wrap justify-between gap-3">
-      <p>© <span id="year"></span> Katrina Chiu. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    const root = document.documentElement;
-    const toggleBtn = document.getElementById('themeToggle');
-    const icon = document.getElementById('themeIcon');
-    const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    function applyTheme(mode){
-      if(mode === 'dark'){ root.classList.add('dark'); if(icon) icon.textContent = '🌞'; }
-      else { root.classList.remove('dark'); if(icon) icon.textContent = '🌙'; }
-    }
-    applyTheme(saved ? saved : (prefersDark ? 'dark' : 'light'));
-    if(toggleBtn){
-      toggleBtn.addEventListener('click', ()=>{
-        const next = root.classList.contains('dark') ? 'light' : 'dark';
-        localStorage.setItem('theme', next);
-        applyTheme(next);
-      });
-    }
-
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if(menuBtn && mobileMenu){
-      menuBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
-    }
-
-    const yearEl = document.getElementById('year');
-    if(yearEl){ yearEl.textContent = new Date().getFullYear(); }
-  </script>
-</body>
-</html>
