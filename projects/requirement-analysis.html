@@ -74,3 +74,131 @@
       <section class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 bg-zinc-50 dark:bg-zinc-900 shadow-card space-y-3">
         <p class="text-xs uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">Project case study</p>
         <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">
+          Requirements Analysis: Integration Requirements Report
+        </h1>
+        <p class="text-sm text-zinc-600 dark:text-zinc-300">
+          <span class="font-semibold">Role:</span> Business Analyst
+        </p>
+        <p class="text-sm text-zinc-600 dark:text-zinc-300">
+          <span class="font-semibold">Summary:</span>
+          Led the discovery and documentation of integration requirements for a new solution,
+          aligning technical design with business needs and constraints.
+        </p>
+      </section>
+
+      <!-- Overview cards -->
+      <section class="grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 bg-zinc-50 dark:bg-zinc-900">
+          <h2 class="text-sm font-semibold mb-1">Objective</h2>
+          <p class="text-sm text-zinc-600 dark:text-zinc-300">
+            Define clear, testable requirements for integrating multiple systems as part of a wider change initiative.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 bg-zinc-50 dark:bg-zinc-900">
+          <h2 class="text-sm font-semibold mb-1">Scope</h2>
+          <p class="text-sm text-zinc-600 dark:text-zinc-300">
+            Covered data flows, business rules, error handling, and reporting needs across the integration.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 p-4 bg-zinc-50 dark:bg-zinc-900">
+          <h2 class="text-sm font-semibold mb-1">Outcome</h2>
+          <p class="text-sm text-zinc-600 dark:text-zinc-300">
+            Produced a structured requirements report used by technical teams for design and build,
+            reducing ambiguity and rework.
+          </p>
+        </div>
+      </section>
+
+      <!-- Detailed sections -->
+      <section class="space-y-6">
+        <div>
+          <h2 class="text-xl font-semibold tracking-tight mb-2">1. Context &amp; objectives</h2>
+          <p class="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
+            Describe the business problem, the systems involved, and what the organisation wanted to achieve
+            with the integration (e.g. single customer view, automated processing, improved reporting).
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold tracking-tight mb-2">2. Information gathering</h2>
+          <ul class="list-disc ml-6 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed space-y-1">
+            <li>Held workshops and interviews with key stakeholders and subject-matter experts.</li>
+            <li>Reviewed existing documentation, process maps, and reporting requirements.</li>
+            <li>Identified pain points in the current process and opportunities to streamline flows.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold tracking-tight mb-2">3. Requirements documentation</h2>
+          <ul class="list-disc ml-6 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed space-y-1">
+            <li>Captured functional requirements for data exchange, validation, and transformation.</li>
+            <li>Documented non-functional requirements (performance, availability, security, audit).</li>
+            <li>Used clear numbering and structure so developers and testers could reference requirements easily.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold tracking-tight mb-2">4. Prioritisation &amp; sign-off</h2>
+          <p class="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
+            Explain how you prioritised requirements (e.g. MoSCoW, risk/impact), managed trade-offs,
+            and secured sign-off from stakeholders and sponsors.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold tracking-tight mb-2">5. Reflection &amp; next steps</h2>
+          <p class="text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
+            Reflect on how the requirements pack supported later phases (design, build, testing),
+            and what you would refine in future work (templates, stakeholder engagement, traceability).
+          </p>
+        </div>
+      </section>
+
+      <!-- Links -->
+      <section class="pt-4 border-t border-zinc-200 dark:border-zinc-800 flex flex-wrap gap-3">
+        <a href="../Requirement Analysis.pdf"
+           class="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
+           target="_blank">
+          📄 Download full requirements report (PDF)
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="py-10 border-t border-zinc-200/70 dark:border-zinc-800">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-zinc-500 flex flex-wrap justify-between gap-3">
+      <p>© <span id="year"></span> Katrina Chiu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const toggleBtn = document.getElementById('themeToggle');
+    const icon = document.getElementById('themeIcon');
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    function applyTheme(mode){
+      if(mode === 'dark'){ root.classList.add('dark'); if(icon) icon.textContent = '🌞'; }
+      else { root.classList.remove('dark'); if(icon) icon.textContent = '🌙'; }
+    }
+    applyTheme(saved ? saved : (prefersDark ? 'dark' : 'light'));
+    if(toggleBtn){
+      toggleBtn.addEventListener('click', ()=>{
+        const next = root.classList.contains('dark') ? 'light' : 'dark';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+      });
+    }
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if(menuBtn && mobileMenu){
+      menuBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+    }
+
+    const yearEl = document.getElementById('year');
+    if(yearEl){ yearEl.textContent = new Date().getFullYear(); }
+  </script>
+</body>
+</html>
